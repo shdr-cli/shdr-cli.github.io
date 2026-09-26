@@ -113,8 +113,7 @@
 
     .avatar-container,
     .name,
-    .links-group,
-    .stats-wrapper {
+    .links-group {
       opacity: 0;
       animation: itemFadeUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
     }
@@ -143,20 +142,6 @@
       gap: 0.8rem;
       margin-bottom: 1.6rem;
       animation-delay: 0.45s;
-    }
-
-    .stats-wrapper {
-      width: 100%;
-      border-radius: 16px;
-      overflow: hidden;
-      background: rgba(0, 0, 0, 0.25);
-      border: 1px solid var(--btn-border);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 6px;
-      transition: border-color 0.3s ease;
-      animation-delay: 0.55s;
     }
 
     .avatar-wrapper {
@@ -232,17 +217,6 @@
       color: var(--accent-cyan);
     }
 
-    .stats-wrapper:hover {
-      border-color: rgba(99, 102, 241, 0.3);
-    }
-
-    .stats-img {
-      width: 100%;
-      height: auto;
-      display: block;
-      border-radius: 12px;
-    }
-
     @media (max-width: 480px) {
       .profile-card {
         padding: 1.8rem 1.2rem;
@@ -280,13 +254,6 @@
         </div>
         <i class="fa-solid fa-arrow-right arrow-icon"></i>
       </a>
-    </div>
-
-    <div class="stats-wrapper">
-      <img 
-        class="stats-img"
-        src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=shdr-cli&amp;layout=compact&amp;bg_color=00000000&amp;title_color=38bdf8&amp;text_color=94a3b8&amp;hide_border=true" 
-      />
     </div>
   </main>
 
